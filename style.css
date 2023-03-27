@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Montserrat:wght@100;200;300;400;500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #4eaafa;
+}
+
+.container .box h2 {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+.container .box p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 25px;
+}
+
+.box {
+  border-radius: 10px;
+}
+
+.container .lampiran {
+  font-family: 'Montserrat', sans-serif;
+  color: #f2f2f2;
+}
+.container {
+  display: flex;
+  /* width: 50%; */
+  /* padding: 20px; */
+  margin: auto;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.285);
+  box-shadow: 1px 1px 3px 1px rgba(255, 255, 255, 0.428);
+  /* border: solid; */
+}
+
+.container:hover {
+  box-shadow: 2px 2px 5px 2px rgba(255, 255, 255, 0.428);
+}
+.container .box {
+  width: 300px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.box .media {
+  padding-top: 20px;
+  display: flex;
+}
+
+.media i {
+  cursor: pointer;
+  margin: 0px 20px 0px 0px;
+}
+
+.lampiran img {
+  width: 100px;
+  margin-left: 10px;
+}
+.container .lampiran {
+  /* width: 500px; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.img-judul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lampiran .judul {
+  margin: 30px 20px;
+}
+
+.lampiran .text {
+  margin-left: 10px;
+}
+
+.container .fa-regular {
+  cursor: pointer;
+}
+
+.lampiran #btn {
+  margin: 20px 20px 0px 10px;
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Mediaquery */
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .container .box {
+  }
+  body {
+    background-color: black;
+  }
+}

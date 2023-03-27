@@ -32,9 +32,82 @@ let logic2 = 11 - 1 == 3 || 20 < 50;
 // typeOf (mengetahui tipe data apa ?)
 let x = typeof ['haertul', 123, true];
 
-console.log(no);
-console.log(number);
-console.log(kukabataku);
-console.log(modulus);
-console.log(bandingkan2);
-console.log(logic2);
+// type Data String
+// Type Data Boolean
+// Variabel
+
+// Control Flow/ Alur kendali
+//Pengulangan/While/loop/ ==> (while, for, Do While)
+
+// let lagi = confirm('lanjut');
+
+// let nilaiMahasiswa = parseInt(prompt('masukkan nilai'));
+
+let clk = document.getElementById('btn');
+let ulang = Boolean;
+
+clk.addEventListener('click', function () {
+  alert('selamat datang');
+});
+
+// while (ulang) {
+//  console.log('Haerul & Iin');
+// }
+
+// for (let awal = 1; awal <= 10; awal++) {
+//   console.log('Iin ' + awal);
+// }
+//   console.log('Hello World');
+//   ulang = confirm('lanjut');
+// }
+
+// let cetak = function (b, v) {
+//   console.log(b, v);
+// };
+
+// i.forEach(cetak);
+
+// MAnipulasi Array
+
+// Object Pada Javascript adalah objek tidak ada index
+// Kenapa kita pakai object ?
+//Membuat objeck secara literal
+let objek = {
+  nama: 'Haerul',
+  istri: 'Iin',
+  anak: 'yusuf',
+  orangTua: 'umar',
+  satatus: 'Mahasiswa',
+};
+
+console.log(objek);
+// cara memeanggil prtama
+console.log(objek.nama);
+// Cara memeanggil kedua
+console.log(objek['istri']); //==> kalau pake kurung siku harus menggunakan string
+// menyimpan dan mengubah objeck menggunakan variabel
+let icik = 'nama';
+console.log(objek[icik]);
+objek.anak = 'Muhammad';
+objek.Tambahan = 'ini baru';
+
+// Membuat object menggunakan Function declaration
+// kita bisa masukkan key nya kedalam variabel lalu di panggil dengan kurung siku
+// Disarankan menggunakan titik untuk mengakses nilai di objeck
+
+//property pada objeck
+
+// Perbedaan mendasar pada function declaration dan function Expretion adalah ==> Declaration mau panggil dulu atau buat dulu bisa, Sedangkan function expretion ==> Harus buat dlu baru Dipanggil contoh =
+
+// FUNCTION DECLARATION > Parameter optional
+dec();
+function dec(/*opsional */) {
+  console.log('Hallo world');
+}
+
+// FUNCTION EXPRETION > Nama/identifier function optional dan parameter juga optional
+
+let exp = function () /*optional */ {
+  console.log('Selamat datang');
+};
+exp();
