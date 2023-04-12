@@ -1,103 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Montserrat:wght@100;200;300;400;500&display=swap');
-* {
-  padding: 0;
-  margin: 0;
+.jawaban button {
+  margin: 30px;
 }
-body {
-  background-color: #4eaafa;
+.hilang {
+  width: 100px;
+  margin-left: 70px;
+  display: none;
 }
-
-.container .box h2 {
-  font-family: 'Kosugi Maru', sans-serif;
+img {
+  width: 100px;
+  z-index: -2;
+  position: absolute;
 }
-.container .box p {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 25px;
-}
-
-.box {
-  border-radius: 10px;
-}
-
-.container .lampiran {
-  font-family: 'Montserrat', sans-serif;
-  color: #f2f2f2;
+.hilang2 {
+  width: 100px;
+  margin-left: 70px;
+  display: none;
 }
 .container {
-  display: flex;
-  /* width: 50%; */
-  /* padding: 20px; */
-  margin: auto;
-  justify-content: space-between;
+  background: #474bff;
+  background: -webkit-linear-gradient(93deg, #474bff 0%, #bc48ff 100%);
+  background: linear-gradient(93deg, #474bff 0%, #bc48ff 100%);
+}
+
+.kotak {
+  text-align: center;
+  /* margin: auto; */
+  width: 200px;
+  height: 200px;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.285);
-  box-shadow: 1px 1px 3px 1px rgba(255, 255, 255, 0.428);
+  border: solid 1px;
+}
+.kotak2 {
+  border: solid 1px;
+  text-align: center;
+  /* margin: auto; */
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  /* border: solid px; */
+}
+.kotak3 {
+  border: solid 1px;
+  text-align: center;
+  /* margin: auto; */
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  /* border: solid px; */
+}
+.kotak:hover {
+  -webkit-box-shadow: 0 -0.5px 11px -2px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 0 -0.5px 11px -2px rgba(0, 0, 0, 0.73);
+  box-shadow: 0 -0.5px 11px -2px rgba(0, 0, 0, 0.73);
+}
+.kotak2:hover {
+  -webkit-box-shadow: 0 -0.5px 11px -2px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 0 -0.5px 11px -2px rgba(0, 0, 0, 0.73);
+  box-shadow: 0 -0.5px 11px -2px rgba(0, 0, 0, 0.73);
+}
+.kotak3:hover {
+  -webkit-box-shadow: 0 -0.5px 11px -2px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 0 -0.5px 11px -2px rgba(0, 0, 0, 0.73);
+  box-shadow: 0 -0.5px 11px -2px rgba(0, 0, 0, 0.73);
+}
+.bungkus {
+  margin: 20px;
+  justify-content: space-evenly;
   /* border: solid; */
-}
-
-.container:hover {
-  box-shadow: 2px 2px 5px 2px rgba(255, 255, 255, 0.428);
-}
-.container .box {
-  width: 300px;
-  padding: 20px;
-  background-color: #f2f2f2;
-}
-
-.box .media {
-  padding-top: 20px;
   display: flex;
-}
-
-.media i {
-  cursor: pointer;
-  margin: 0px 20px 0px 0px;
-}
-
-.lampiran img {
-  width: 100px;
-  margin-left: 10px;
-}
-.container .lampiran {
-  /* width: 500px; */
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.img-judul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.lampiran .judul {
-  margin: 30px 20px;
-}
-
-.lampiran .text {
-  margin-left: 10px;
-}
-
-.container .fa-regular {
-  cursor: pointer;
-}
-
-.lampiran #btn {
-  margin: 20px 20px 0px 10px;
-  width: 100px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-/* Mediaquery */
-@media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-  }
-  .container .box {
-  }
-  body {
-    background-color: black;
-  }
 }
